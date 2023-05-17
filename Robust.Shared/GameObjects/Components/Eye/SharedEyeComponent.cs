@@ -30,7 +30,7 @@ namespace Robust.Shared.GameObjects
 
         /// <summary>
         ///     Zoom we're lerping to.
-        ///.....It is for zoom animation
+        ///     It is for zoom animation
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         public Vector2 TargetZoom = Vector2.One;
