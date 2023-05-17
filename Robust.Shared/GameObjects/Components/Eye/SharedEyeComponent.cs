@@ -27,6 +27,19 @@ namespace Robust.Shared.GameObjects
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         public virtual uint VisibilityMask { get; set; }
+
+        /// <summary>
+        ///     Zoom we're lerping to.
+        ///.....It is for zoom animation
+        /// </summary>
+        [ViewVariables(VVAccess.ReadWrite)]
+        public Vector2 TargetZoom = Vector2.One;
+
+        /// <summary>
+        ///     How far we're allowed to zoom out for users.
+        /// </summary>
+        [ViewVariables(VVAccess.ReadWrite)]
+        public Vector2 MaxZoom = Vector2.One;
     }
 
     [NetSerializable, Serializable]
