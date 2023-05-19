@@ -33,7 +33,7 @@ namespace Robust.Shared.GameObjects
         ///     It is for zoom animation
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
-        public Vector2 AnimatedZoom = Vector2.One;
+        public Vector2 AnimatedZoom;
     }
 
     [NetSerializable, Serializable]
